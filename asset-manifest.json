@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nueva2/static/css/main.b63953e2.css",
+    "main.js": "/nueva2/static/js/main.6e9549b4.js",
+    "static/media/logo-anim.mp4": "/nueva2/static/media/logo-anim.2a7a0c268d22b9b1817f.mp4",
+    "static/media/3video1.webm": "/nueva2/static/media/3video1.447d807bef063ac36c0f.webm",
+    "static/media/robots.jpg": "/nueva2/static/media/robots.6ab5e59300d6b74fd4c2.jpg",
+    "static/media/gra.jpg": "/nueva2/static/media/gra.be63ceeb7badb3bca4f8.jpg",
+    "static/media/Logodesign.jpeg": "/nueva2/static/media/Logodesign.bf8f202a9c78358c69cf.jpeg",
+    "static/media/elektra.jpeg": "/nueva2/static/media/elektra.3bcbba366f06811ddcf6.jpeg",
+    "static/media/fontsfree-net-axiforma6woff2-webfont.woff": "/nueva2/static/media/fontsfree-net-axiforma6woff2-webfont.1d06b7567b3274b7dac7.woff",
+    "static/media/Hanson-Bold.ttf": "/nueva2/static/media/Hanson-Bold.79d7d85e1fb162a1da6b.ttf",
+    "static/media/fontsfree-net-sddd4-webfont.woff2": "/nueva2/static/media/fontsfree-net-sddd4-webfont.90703b1a0859abe2b2cf.woff2",
+    "index.html": "/nueva2/index.html",
+    "main.b63953e2.css.map": "/nueva2/static/css/main.b63953e2.css.map",
+    "main.6e9549b4.js.map": "/nueva2/static/js/main.6e9549b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b63953e2.css",
+    "static/js/main.6e9549b4.js"
+  ]
+}
