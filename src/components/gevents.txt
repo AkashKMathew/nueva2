@@ -1,0 +1,510 @@
+//Gevents.css
+
+import React,{useState} from 'react';
+import './Gevents.css';
+import Workshop from './Workshop';
+import Event from './Event';
+import Talks from './Talks';
+import workshop from'../Assets/workshop.jpg';
+export default function Gevents() {
+ const[openWorkshop,setWorkshop]=useState(false);
+ const[openEvent,setEvent]=useState(false);
+ const[openTalks,setTalks]=useState(false);
+ const[changeHeight,setHeight]=useState(false);
+
+  return (
+    <div className={`gevents  ${changeHeight? "lgevent" : "sgevent"}`}>
+        <div className="col">
+            <div className="row1">
+            
+                <div className='heading1'>WHAT'S <div className='headingimg'></div><span className='headingcontent'>IN</span><br/>STORE</div>
+            </div>
+            <div className="row2">
+            <div className='one' > <img src={workshop} alt=".." className='oneimg'></img>
+            <button className='overlayimg' onClick={()=>{setWorkshop(true);setEvent(false);setTalks(false);}}>WORKSHOP</button></div>
+            
+            <div className='two'><img src={workshop} alt=".." className='oneimg'></img><button className='overlayimg' onClick={()=>{setEvent(true);setWorkshop(false);setTalks(false);}}>EVENTS</button></div>
+            
+            <div className='three'><img src={workshop} alt=".." className='oneimg'></img><button className='overlayimg' onClick={()=>{setTalks(true);setEvent(false);setWorkshop(false);}}>TECHTALKS</button></div>
+            
+            </div>
+            {openWorkshop && <Workshop closeWorkshop={setWorkshop} /> }
+            {openEvent && <Event closeEvent={setEvent} /> }
+            {openTalks && <Talks closeTalks={setTalks} /> }
+        </div>
+    </div>
+  )
+}
+
+//Gevents.css
+.lgevents{
+    height:180vw;
+    background-color: #01012b;
+}
+.sgevents{
+    height:60vw;
+    background-color: #01012b;
+}
+.row1{
+    height: 20vw;
+    color: white;
+   
+}
+.heading1{
+    margin-left: 3vw;
+    font-size: 6vw;
+    font-weight: 700;
+    color: aqua;
+    font-family: Chakra Petch;
+    letter-spacing: 1vw;
+    
+}
+
+.headingimg{
+    height: 1vw;
+    width: 2vw;
+    
+    border-width: 0vw 8vw 6vw 0vw;
+    border-style: solid;
+    border-color:  transparent #00c8ff  #00fbff #00e5ff;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 120%, 0% 12%);
+    position: absolute;
+    top: 51vw;
+    left: 33vw;
+   
+}
+.headingcontent{
+   
+    font-weight: 800;
+ 
+    font-family: Chakra Petch;
+    letter-spacing: 1vw;
+    height: 1vw;
+    width: 2vw;
+    color:#01012b ;
+
+    position: absolute;
+    top: 50vw;
+    left: 33.5vw;
+}
+
+.row2{
+    margin-top: 4vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.one{
+    height: 28vw;
+    background-image:linear-gradient(#01012b, #074b61, #00c0ff);
+    width: 30vw;
+    
+}
+
+.oneimg{
+    height: 25vw;
+    width: 25vw;
+    margin-left: 2.5vw;
+    margin-top: 1.5vw;
+    border-radius: 20px 20px 20px 20px;
+
+}
+.overlayimg{
+    height: 6vw;
+    width: 30vw;
+    /* background-color: black; */
+    background-image:linear-gradient(#01012b, #2d2f30, #00c0ff);
+    font-family: Chakra Petch;
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    bottom: 4.5vw;
+    opacity: 0.9;
+    
+}
+.overlayimg:hover{
+    background-image:linear-gradient(#05053e, #2d2f30, #767474);
+
+}
+.two{
+    height:28vw;
+    background-image:linear-gradient(#01012b, #074b61, #00c0ff);
+    width: 30vw;
+}
+.three{
+    height:28vw;
+    background-image:linear-gradient(#01012b, #074b61, #00c0ff);
+    width: 30vw;
+}
+
+@media (max-width: 575.98px) { 
+    .gevents{
+        height:260vw;
+        background-color: #01012b;
+    }
+    .row1{
+        height: 30vw;
+        color: white;
+       
+    }
+    .row2{
+        margin-top: 10vw;
+        height:230vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+    .two{
+        height: 60vw;
+        width: 60vw;
+        margin-top: 2vw;
+    }
+    .three{
+        height: 60vw;
+        width: 60vw;
+        margin-top: 2vw;
+        margin-bottom: 20vw;
+    }
+
+    .one{
+        height: 60vw;
+        width: 60vw;
+        background-image:linear-gradient(#01012b, #074b61, #00c0ff);
+
+    }
+    
+    .oneimg{
+        height: 55vw;
+        width: 55vw;
+        margin-left: 2.5vw;
+        margin-top: 1.5vw;
+        border-radius: 20px 20px 20px 20px;
+    
+    }
+    .heading1{
+        margin-left: 3vw;
+        font-size: 14vw; 
+    }
+    .overlayimg{
+        height: 10vw;
+        width: 60vw;       
+        font-size: 8vw;  
+        
+    }
+    .headingimg{
+        height: 5vw;
+        width: 8vw;
+        
+        border-width: 0vw 13vw 12vw 3vw;
+        border-style: solid;
+        border-color:  transparent #00c8ff  #00fbff #00e5ff;
+        clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 120%, 0% 12%);
+        position: absolute;
+        top: 54vw;
+        left: 70vw;
+       
+    }
+    .headingcontent{
+        height: 1vw;
+        width: 2vw;
+        position: absolute;
+        top: 50vw;
+        left: 70vw;
+    }
+
+}
+
+
+//Talks.js
+
+import React from 'react'
+import './Workshop.css'
+import elektra from '../Assets/elektra.jpeg'
+
+const Event = ({closeTalks}) => {
+
+let content=[
+    {
+        image: elektra,
+        title: "KRANTHI",
+        date : "31/10/2001",
+        link : "www.google.com",
+        cost : "RS 499/-",
+        learn: "http://iste.gectcr.ac.in/"
+    },
+    {
+        image: elektra,
+        title: "ELEKTRA",
+        date : "31/10/2001",
+        link : "www.google.com",
+        cost : "RS 499/-",
+        learn: "http://iste.gectcr.ac.in/"
+    },
+    {
+        image: elektra,
+        title: "INFINOIA",
+        date : "31/10/2001",
+        link : "www.google.com",
+        cost : "RS 499/-",
+        learn: "http://iste.gectcr.ac.in/"
+    },
+    {
+        image: elektra,
+        title: "LETO",
+        date : "31/10/2001",
+        link : "www.google.com",
+        cost : "RS 499/-",
+        learn: "http://iste.gectcr.ac.in/"
+    },
+    {
+        image: elektra,
+        title: "LETO",
+        date : "31/10/2001",
+        link : "www.google.com",
+        cost : "RS 499/-",
+        learn: "http://iste.gectcr.ac.in/"
+    }
+];
+    return (
+           
+<div className="event">
+<button className='close' onClick={()=>closeTalks(false)}>X</button>
+    <div className="sheet">
+        <div className="innersheet">
+        <h1 style={{color:'white',fontSize:'10vw'}}>Talks</h1>
+
+    {content.map((element,ctx) => (
+        <div className="card">
+            <div className="mainhead"><h1 className='head'>{element.title}</h1><p>{element.date}</p></div>
+        <img src={element.image} alt="" className='imag' />
+        <h2 className="head3">{element.cost}</h2>
+        <div className="comb"><div className="reg1">
+            <div className="reg2"><p>Register</p></div>
+        </div> <a href="https://www.figma.com/file/3RdcXNnmwRiOXmzsZDb8RW/ISTE-GECT?node-id=0%3A1&t=sKz1JXpa45GG4ftX-0">LEARN MORE</a></div>
+            </div>
+      ))}
+   </div>
+    </div>
+ 
+</div> 
+
+);
+}
+ 
+export default Event;
+
+
+//workshop.css
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Open+Sans:ital,wght@0,500;0,600;1,400&display=swap');
+.event{
+  /* background-color: #01012b; */
+  width: 100vw;
+    height: 66vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vw;
+    
+
+}
+.close {
+position: absolute;
+left:88vw;
+  top: 115vw;
+ font-size: 4vw;
+  color: white;
+  cursor: pointer;
+  /* background-color: red; */
+  
+}
+.sheet{
+  background-image: linear-gradient(#01012b, #074b61, #01012b);
+  /* background-image: linear-gradient(#074b61, #01012b, #074b61); */
+  /* border: white solid 0.2px; */
+  box-shadow: #ffffff26 0px 0px 1px 1px;
+  width: 84vw;
+  height: 69vw;
+  border-radius: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.head{
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.card{
+  border: 1px solid aqua;
+  height: 28vw;
+  margin: 3vw;
+  align-items: flex-start;
+  width: 29vw;
+  background-color: black;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  color: white;
+
+}
+.innersheet{
+  /* background-color: aqua; */
+  width: 85vw;
+  height: 60vw;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  overflow-y: auto;
+  
+  scrollbar-width: none;
+
+}
+.innersheet::-webkit-scrollbar {
+  display: none;
+}
+
+.imag{
+  width: 12vw;
+  height: 13vw;
+  margin-left: 2vw;
+}
+.head3{
+  margin: 1vw 2vw;
+}
+.reg1{
+  border:2px solid aqua;
+  height:2vw;
+  width: 5vw;
+  border-radius: .5vw;
+  margin-left: 2vw;
+  background-color: black;
+
+  /* position: relative; */
+}
+.reg2{
+  border: 2px solid aqua;
+    height: 2vw;
+    font-size: 1vw;
+    width: 5vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: -0.5vw;
+    margin-left: -0.5vw;
+    border-radius: 0.5vw;
+    font-family: 'Chakra Petch', sans-serif;
+    justify-content: center;
+
+}
+.mainhead{
+  display: flex;
+  margin-left: 2vw;
+  width: 21vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainhead p{
+  font-family: 'Chakra Petch', sans-serif;
+  position: relative;
+
+}
+.comb{
+  display: flex;
+  width: 25vw;
+  justify-content: space-between;
+  
+}
+.comb a{
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  font-family: 'Chakra Petch', sans-serif;
+}
+.imag:hover{
+  z-index: 50;
+  margin-top: -6vw;
+  margin-left: 0vw;
+  background-color: red;
+  transition: .3s ease-in-out ;
+  border-radius: 2vw;
+  width: 29vw;
+  height: 28.1vw;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+    width: 75vw;
+    height: 83vw;
+  }
+  .event{
+    height: 200vw;
+  }
+  .innersheet{
+    height: 100vw;
+  }
+  .head{
+    font-size: 7vw;
+    margin: 2vw 3vw;
+  }
+  .imag{
+    width:40vw;
+    height: 40vw;
+    margin:1vw 5.5vw 3vw;
+  }
+  .head3{
+    font-size: 5vw;
+    margin:1vw 5.5vw 3vw;
+  }
+  .comb{
+    width: 70vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+  }
+  .reg1{
+    width:20vw;
+    height: 9vw;
+    border:2px solid white;
+  border-radius: 2vw;
+  margin-left: 5.5vw;
+  background-color: black;
+  }
+  .reg2{
+    border: 2px solid white;
+      font-size: 3vw;
+      width: 20vw;
+    height: 9vw;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-top: -1.8vw;
+      margin-left: -1.8vw;
+      border-radius: 2vw;
+      font-family: 'Chakra Petch', sans-serif;
+      justify-content: center;
+  
+  }
+  .comb a{
+    font-size: 3vw;
+  }
+  .imag:hover{
+    margin-top: -3vw;
+    width: 75vw;
+    height: 73vw;
+  }
+}

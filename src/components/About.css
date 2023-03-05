@@ -1,0 +1,42 @@
+.about{
+    position: absolute;
+    top: 70vw;
+    background-color: aliceblue;
+    margin-top: 8vw;
+}
+.in{
+    padding: 5vw;
+    position: relative;
+}
+.in h1{
+    font-size: 6vw;
+    color: rgb(240 96 0);
+    font-weight: 600;
+    font-family: 'Imported';
+}
+.in p{
+    color: white;
+    text-align: left;
+    font-family: imported3;
+    font-size: 1.6vw;
+    width: 68vw;
+}
+@media only screen and (max-width: 600px){ 
+
+    .in h1{
+        font-size: 12vw;
+        color: rgb(240 96 0);
+        font-weight: 600;
+    }
+    .abn{
+        width: 100vw;
+        /* background-color: blue; */
+    }
+    .in p{
+        color: white;
+        text-align: left;
+        
+        font-size: 4vw;
+        width: 55vw;
+    }
+}

@@ -1,0 +1,34 @@
+.group{
+    margin-top: 40vw;
+    color: white;
+    height: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Chakra Petch;
+    /* margin-top: 2vw; */
+    margin-bottom: -5vw;
+ 
+}
+
+.c1{
+    background-image: linear-gradient(120deg, #074b61,transparent, transparent);
+    height:20vw;
+    font-size: 3vw;
+}
+.c1:hover{
+    background-image: linear-gradient(120deg, #1490ba,#033d54, transparent);
+
+}
+
+@media (max-width: 575.98px) {
+    
+.group{
+    margin-top:70vw;
+  
+ 
+}
+
+
+}
+

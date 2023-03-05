@@ -1,0 +1,33 @@
+.Istelogo {
+  height: 45vw;
+  /* background-color: #01012b; */
+}
+.istelogoimg {
+  height: 42vw;
+  width: 100%;
+  padding: 5vw;
+  border: 2vw 2vw 2vw white;
+}
+.line {
+  background-color: #ffee08;
+  width: 85%;
+  height: 0.5vw;
+  margin-left: 8vw;
+  position: relative;
+}
+.line1 {
+  background-color: #ffee08;
+  width: 10%;
+  height: 0.5vw;
+  margin-left: 8vw;
+  border-radius: 0px 0px 10px;
+  position: relative;
+}
+.line2 {
+  background-color: #ffee08;
+  width: 10%;
+  height: 0.5vw;
+  margin-left: 82vw;
+  border-radius: 10px 0px 0px;
+  position: relative;
+}

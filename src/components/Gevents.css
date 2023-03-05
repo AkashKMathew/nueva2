@@ -1,0 +1,249 @@
+.gevents{
+    height:100vw;
+    /* background-color: #01012b; */
+}
+.showGevents{
+    height:92vw;
+    /* background-color: #01012b; */
+}
+.col{
+    width: 100vw;
+}
+.hideGevents{
+    height: 10vw;
+    display: flex;
+    margin-top: 15vw;
+    /* background-color: #01012b; */
+    align-items: center;
+    justify-content: space-around;
+
+    /* background-color: #01012b; */
+}
+.heading1{
+    margin-left: 3vw;
+    font-size: 6vw;
+    font-weight: 700;
+    color: aqua;
+    font-family: Chakra Petch;
+    letter-spacing: 1vw;
+    
+}
+
+.headingimg{
+    height: 1vw;
+    width: 2vw;
+    
+    border-width: 0vw 8vw 6vw 0vw;
+    border-style: solid;
+    border-color:  transparent #00c8ff  #00fbff #00e5ff;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 120%, 0% 12%);
+    position: absolute;
+    top: 51vw;
+    left: 33vw;
+   
+}
+.headingcontent{
+   
+    font-weight: 800;
+ 
+    font-family: Chakra Petch;
+    letter-spacing: 1vw;
+    height: 1vw;
+    width: 2vw;
+    color:#01012b ;
+
+    position: absolute;
+    top: 50vw;
+    left: 33.5vw;
+}
+
+.row2{
+    margin-top: 4vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.one{
+    height: 28vw;
+    /* background-image:linear-gradient(#01012b, #074b61, #00c0ff); */
+    width: 30vw;
+    
+    
+}
+
+
+.oneimg{
+    height: 25vw;
+    width: 25vw;
+    margin-left: 2.5vw;
+    margin-top: 1.5vw;
+    border-radius: 20px 20px 20px 20px;
+
+}
+.overlayimg{
+    height: 18vw;
+    width: 30vw;
+    background-image: linear-gradient(120deg, #074b61,transparent, transparent);
+    background-size: cover;
+    border: solid 2px white;
+    /* background-image:linear-gradient(#01012b, #2d2f30, #00c0ff); */
+    font-family: Chakra Petch;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-align: center;
+    bottom: 4.5vw;
+    opacity: 0.9;
+    border-radius: 5vw;
+
+    
+}
+.overlayimg:hover{
+    opacity: 0.5;
+    background-image: linear-gradient(120deg, #000000,#033d54, transparent);
+
+    transition: 2s  smooth;
+
+}
+.two{
+    height:28vw;
+    /* background-image:linear-gradient(#01012b, #074b61, #00c0ff); */
+    width: 30vw;
+}
+.three{
+    height:28vw;
+    /* background-image:linear-gradient(#01012b, #074b61, #00c0ff); */
+    width: 30vw;
+}
+.works{
+    display: none;
+    height: 0vw;
+    transition: all 2s ease-in-out;
+}
+.showworks{
+    display: block;
+    transition: all 2s ease-in-out;
+}
+.cloose{
+    position: absolute;
+    color: white;
+    right: 15vw;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+.showtalko{
+    display: block;
+}
+.Talko{
+    display: none;
+    height: 0vw;
+}
+
+.evento{
+    display: none;
+    height: 0vw;
+}
+.showevento{
+    display: block;
+    height: 60vw;
+    transition-duration:  4s ease-in-out;
+
+
+}
+.cardo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -16vw;
+}
+
+.hideworks{
+    display: none;
+    
+}
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    .gevents{
+        height:260vw;
+        background-color: #01012b;
+    }
+    .row1{
+        height: 30vw;
+        color: white;
+       
+    }
+    .row2{
+        margin-top: 25vw;
+        height:64vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+    .two{
+        height: 0vw;
+        width: 60vw;
+        margin-top: 0vw;
+    }
+    .three{
+        height: 0vw;
+        width: 60vw;
+        margin-top: 2vw;
+        margin-bottom: 20vw;
+    }
+
+    .one{
+        height: 0vw;
+        width: 60vw;
+        /* background-image:linear-gradient(#01012b, #074b61, #00c0ff); */
+
+    }
+    
+    .oneimg{
+        height: 55vw;
+        width: 55vw;
+        margin-left: 2.5vw;
+        margin-top: 1.5vw;
+        border-radius: 20px 20px 20px 20px;
+    
+    }
+    .heading1{
+        margin-left: 3vw;
+        font-size: 14vw; 
+    }
+    .overlayimg{
+        height: 10vw;
+        width: 60vw;       
+        font-size: 3.5vw;  
+            background-image:linear-gradient(45deg,transparent, #40b9c2);
+    }
+    .headingimg{
+        height: 5vw;
+        width: 8vw;
+        
+        border-width: 0vw 13vw 12vw 3vw;
+        border-style: solid;
+        border-color:  transparent #00c8ff  #00fbff #00e5ff;
+        clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 120%, 0% 12%);
+        position: absolute;
+        top: 54vw;
+        left: 70vw;
+       
+    }
+    .headingcontent{
+        height: 1vw;
+        width: 2vw;
+        position: absolute;
+        top: 50vw;
+        left: 70vw;
+    }
+
+}

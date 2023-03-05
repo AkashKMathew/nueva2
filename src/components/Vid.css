@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap");
+
+
+.highlight1,.highlight3{
+    width: 100vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: row;
+}
+.robo {
+    height: 40vw;
+    width: 35vw;
+    padding: 4vw;
+    border-radius: 18vw;
+}
+.roh1,.roh2,.roh3{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 35vw;
+}
+.roh1 h1,.roh2 h1,.roh3 h1{
+    width: 50vw;
+     color: rgb(240 96 0);
+     font-size: 6vw;
+     font-family: Imported;
+     font-weight: 400;
+     margin-top: 12vw;
+     align-items: center;
+    
+     
+ }
+.roh1 p,.roh2 p,.roh3 p{
+    color: white;
+    text-align: left;
+    font-family: imported3;
+    font-weight: 300;
+    font-size: 1.6vw;
+    width: 49vw;
+    
+
+}
+.highlight2{
+    width: 100vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
