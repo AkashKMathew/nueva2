@@ -10,7 +10,7 @@
     width: 100vw;
 }
 .hideGevents{
-    height: 10vw;
+    height: 50vw;
     display: flex;
     margin-top: 15vw;
     /* background-color: #01012b; */
@@ -180,6 +180,7 @@
     }
     .row2{
         margin-top: 25vw;
+        margin-bottom: 50px;
         height:64vw;
         display: flex;
         flex-direction: column;
@@ -245,5 +246,7 @@
         top: 50vw;
         left: 70vw;
     }
-
+    .showGevents{
+        height:130vw;
+    }
 }
